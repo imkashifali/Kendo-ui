@@ -1,0 +1,68 @@
+:host {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+:host > * {
+  margin-bottom: 20px;
+}
+
+button {
+  margin: 10px;
+}
+
+kendo-buttongroup button {
+  margin: 0;
+}
+
+.new-todo-input {
+  margin: 25px 0;
+  height: 50px;
+}
+h6 {
+  margin: 0;
+  text-transform: uppercase;
+}
+.new-todo-input,
+.todo {
+  padding: 0;
+  width: 100%;
+  display: block;
+  font-size: 18px;
+  line-height: 50px;
+  text-align: center;
+}
+.example-wrap {
+  display: flex;
+  justify-content: center;
+}
+.k-form {
+  width: 400px;
+}
+
+.master__input {
+  width: 100%;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 2px 10px #00000017;
+  border: 1px solid #9f9f9f;
+  border-radius: 12px;
+  opacity: 1;
+}
+.master__input:focus {
+  width: 100%;
+  background: #fffec9 0% 0% no-repeat padding-box;
+  box-shadow: 0px 2px 10px #00000017;
+  border: 1px solid #82b1ff;
+  border-radius: 3px;
+  opacity: 1;
+}
+.master__label:hover {
+  width: auto;
+  color: slateblue !important;
+  font-size: 34px !important;
+}
+
+.master__label .k-label {
+  font-size: 10px;
+}

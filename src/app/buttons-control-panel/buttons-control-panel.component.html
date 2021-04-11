@@ -1,0 +1,44 @@
+<div class="k-block">
+  <button kendoButton [look]="'default'">Default Button</button>
+  <button kendoButton [look]="'outline'">Outline Button</button>
+  <button kendoButton [look]="'bare'">Bare Button</button>
+  <button kendoButton>Button</button>
+</div>
+<kendo-buttongroup [width]="100" look="outline">
+  <button kendoButton [icon]="'user'" [togglable]="true">Icon Button</button>
+  <button kendoButton [icon]="'check'" [togglable]="true">Icon Button</button>
+  <button kendoButton [icon]="'calendar'" [togglable]="true">
+    Icon Button
+  </button>
+</kendo-buttongroup>
+
+<kendo-buttongroup [width]="100" look="bare">
+  <button kendoButton [primary]="true">Primary Action</button>
+  <button kendoButton [togglable]="true">Toggleable</button>
+  <button kendoButton [icon]="'check'">Icon Button</button>
+  <button kendoButton [icon]="'clip'">Icon Button</button>
+  <button kendoButton [icon]="'calendar'">Icon Button</button>
+</kendo-buttongroup>
+<div>
+  <kendo-floatinglabel text="First Name" class="master__label">
+    <input
+      kendoTextBox
+      name="firstName"
+      class="master__input"
+      autocomplete="off"
+    />
+  </kendo-floatinglabel>
+
+  <kendo-floatinglabel text="Enter Last Name">
+    <input kendoTextBox name="lastName" />
+  </kendo-floatinglabel>
+  <kendo-floatinglabel text="Select value">
+    <kendo-combobox [data]="data"> </kendo-combobox>
+  </kendo-floatinglabel>
+  <kendo-floatinglabel text="Select value(s)">
+    <kendo-multiselect [data]="data"> </kendo-multiselect>
+  </kendo-floatinglabel>
+  <kendo-floatinglabel text="Select value">
+    <kendo-dropdownlist [data]="data"> </kendo-dropdownlist>
+  </kendo-floatinglabel>
+</div>
